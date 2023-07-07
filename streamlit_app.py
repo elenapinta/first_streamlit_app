@@ -28,7 +28,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 #Text Entry Box and send the input to Fruityvice as Part of the API call
 #Introducing this structure allows us to separate the code that is loaded once from the code that should be repeated each time a new value is entered.
 try:
-  fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
+  fruit_choice = streamlit.text_input('What fruit would you like information about?') #removed Kiwi
   if not fruit_choice:
     streamlit.error("Please select a fruit to get information.")
   else:
